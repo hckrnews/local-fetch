@@ -5,7 +5,7 @@ describe('Test the local Fetcher', () => {
   it('It should get the json from the file', async () => {
     const { json } = await localFetcher('./src/__fixtures__/example.json')
 
-    expect(json()).toEqual({
+    expect(await json()).toEqual({
       test: 'ok'
     })
   })
@@ -13,7 +13,7 @@ describe('Test the local Fetcher', () => {
   it('It should get the text of the file', async () => {
     const { text } = await localFetcher('./src/__fixtures__/example.json')
 
-    expect(text()).toEqual(`{
+    expect(await text()).toEqual(`{
     "test": "ok"
 }
 `)

@@ -5,8 +5,8 @@ const localFetch = async (location) => {
   const stream = fs.createReadStream(location)
   return {
     body: stream,
-    text: () => rawdata.toString('ascii', 0, rawdata.length),
-    json: () => JSON.parse(rawdata)
+    text: async () => rawdata.toString('ascii', 0, rawdata.length),
+    json: async () => JSON.parse(rawdata)
   }
 }
 
