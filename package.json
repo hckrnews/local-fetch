@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/local-fetch",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Local Fetch",
     "files": [
         "src/index.js"
