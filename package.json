@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/local-fetch",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "description": "Local Fetch",
     "files": [
         "src/index.js",
@@ -29,6 +29,7 @@
     "homepage": "https://github.com/hckrnews/local-fetch#readme",
     "scripts": {
         "lint": "standard src",
+        "lint:report": "standard src | standard-reporter --json > report.json",
         "lint:fix": "standard src --fix",
         "test": "jest",
         "test:watch": "jest src --watch",
@@ -48,9 +49,12 @@
         "eslint": "^7.18.0",
         "esm": "^3.2.25",
         "jest": "^27.2.4",
+        "jest-junit": "^13.0.0",
+        "jest-sonar-reporter": "^2.0.0",
         "jscpd": "^3.3.26",
         "prettier": "^2.2.0",
-        "standard": "^16.0.3"
+        "standard": "^16.0.3",
+        "standard-reporter": "^1.0.5"
     },
     "type": "module",
     "engines": {
