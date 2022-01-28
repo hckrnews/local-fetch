@@ -17,4 +17,12 @@ module.exports = {
 
     collectCoverage: true,
     collectCoverageFrom: ['src/**/*.js'],
+    testResultsProcessor: 'jest-sonar-reporter',
+    reporters: [
+      'default',
+      [ 'jest-junit', {
+        outputDirectory: 'test-reports',
+        outputName: 'jest-junit.xml',
+      } ]
+    ],
 };
