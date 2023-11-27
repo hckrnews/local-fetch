@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/local-fetch",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "description": "Local Fetch",
     "files": [
         "src/index.js",
@@ -12,6 +12,7 @@
         "type": "git",
         "url": "https://github.com/hckrnews/local-fetch.git"
     },
+    "license": "MIT",
     "keywords": [
         "javascript",
         "fetch",
@@ -33,32 +34,29 @@
         "lint:fix": "standard src --fix",
         "test": "jest",
         "test:watch": "jest src --watch",
-        "coveralls": "jest && codecov && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
         "cpd": "node_modules/jscpd/bin/jscpd src",
-        "vulnerabilities": "npm audit --only=prod"
+        "vulnerabilities": "npm audit --omit=dev"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",
         "@babel/eslint-parser": "^7.14.7",
         "@babel/plugin-transform-modules-commonjs": "^7.14.0",
         "@babel/preset-env": "^7.12.11",
-        "@jest/globals": "^27.0.6",
-        "babel-jest": "^27.2.4",
-        "codecov": "^3.8.1",
-        "coveralls": "^3.1.0",
-        "eslint": "^7.18.0",
+        "@jest/globals": "^29.0.0",
+        "babel-jest": "^29.0.0",
+        "eslint": "^8.0.0",
         "esm": "^3.2.25",
-        "jest": "^27.2.4",
-        "jest-junit": "^13.0.0",
+        "jest": "^29.0.0",
+        "jest-junit": "^16.0.0",
         "jest-sonar-reporter": "^2.0.0",
         "jscpd": "^3.3.26",
-        "prettier": "^2.2.0",
-        "standard": "^16.0.3",
+        "prettier": "^3.0.0",
+        "standard": "^17.0.0",
         "standard-reporter": "^1.0.5"
     },
     "type": "module",
     "engines": {
-        "node": ">= 14"
+        "node": ">= 18"
     },
     "standard": {
         "parser": "@babel/eslint-parser",
@@ -71,5 +69,9 @@
         "ignore": [
             "**/__fixtures__/"
         ]
+    },
+    "funding": {
+        "type": "github",
+        "url": "https://github.com/sponsors/w3nl"
     }
 }
