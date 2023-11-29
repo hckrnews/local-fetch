@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import getPath from './get-path.js'
 
 const localFetch = async (location) => {
