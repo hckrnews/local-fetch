@@ -1,4 +1,4 @@
-import { URL } from 'url'
+import { URL } from 'node:url'
 import isURL from './is-url.js'
 
 const getPath = location =>
