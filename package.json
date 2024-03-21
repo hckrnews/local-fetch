@@ -1,6 +1,6 @@
 {
     "name": "@hckrnews/local-fetch",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "description": "Local Fetch",
     "files": [
         "src/index.js",
@@ -39,7 +39,7 @@
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",
-        "@babel/eslint-parser": "^7.14.7",
+        "@babel/eslint-parser": "^7.23.9",
         "@babel/plugin-transform-modules-commonjs": "^7.14.0",
         "@babel/preset-env": "^7.12.11",
         "@jest/globals": "^29.0.0",
