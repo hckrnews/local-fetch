@@ -41,7 +41,7 @@
         "@babel/core": "^7.26.10",
         "@babel/eslint-parser": "^7.23.9",
         "@babel/plugin-transform-modules-commonjs": "^7.14.0",
-        "@babel/preset-env": "^7.12.11",
+        "@babel/preset-env": "^7.27.1",
         "@jest/globals": "^29.0.0",
         "babel-jest": "^29.0.0",
         "eslint": "^9.0.0",
